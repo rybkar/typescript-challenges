@@ -11,24 +11,24 @@
 
 class Bag {
     constructor(
-        items: string[]
+        public items: string[]
     ) { }
 
-    lookInside() {
+    public lookInside() {
         return this.items;
     }
 }
 
 class BrandedBag extends Bag {
     constructor(
-        logo: string,
-        brand: string,
+        public logo: string,
+        public brand: string,
         items: string[]
     ) {
         super(items);
     }
 
-    checkBrand() {
+    public checkBrand() {
         return `Brand - ${this.brand}`;
     }
 }

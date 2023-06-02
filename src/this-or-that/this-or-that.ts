@@ -9,10 +9,12 @@
 * Hint: https://www.typescriptlang.org/docs/handbook/advanced-types.html#union-types
 */
 
-const iAmANumber = 800
-const iAmAString = '600'
+type Size = number | string;
 
-function configureScreenSize(width: string, height: string) {
+const iAmANumber: number = 800
+const iAmAString: string = '600'
+
+function configureScreenSize(width: Size, height: Size) {
     return `Setting screen size as ${width}px x ${height}px`;
 }
 
